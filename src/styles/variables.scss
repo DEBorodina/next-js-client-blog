@@ -1,9 +1,11 @@
 $white-color: #ffffff;
 $blue-color: #232536;
 $dark-grey-color: #4c4c4c;
+$medium-grey-color: #6d6e76;
 $light-grey-color: #6d6e76;
 $yellow-color: #ffd050;
 $light-pink-color: #f4f0f8;
+$purple-color: #592ea9;
 
 :export {
   $white-color: $white-color;
@@ -12,4 +14,6 @@ $light-pink-color: #f4f0f8;
   $light-grey-color: $light-grey-color;
   $yellow-color: $yellow-color;
   $light-pink-color: $light-pink-color;
+  $medium-grey-color: $medium-grey-color;
+  $purple-color: $purple-color;
 }

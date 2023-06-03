@@ -24,7 +24,7 @@
 }
 
 .form__input {
-  width: 20%;
+  width: 100%;
   height: 56px;
   background: transparent;
   padding-left: 24px;
@@ -37,6 +37,20 @@
     color: $white-color;
     opacity: 0.2;
   }
+}
+
+.form__input_container {
+  position: relative;
+  width: 20%;
+}
+
+.form__input_hints {
+  position: absolute;
+  bottom: -26px;
+  width: 100%;
+  font-size: 12px;
+  height: 16px;
+  color: $white-color;
 }
 
 .form__button {
