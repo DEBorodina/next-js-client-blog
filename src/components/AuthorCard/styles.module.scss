@@ -1,0 +1,51 @@
+.author {
+  width: 100%;
+  min-width: 230px;
+  height: 324px;
+  background-color: $light-grey-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.author__image {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.author__name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: $blue-color;
+
+  &:hover {
+    color: lighten($blue-color, 15%);
+  }
+}
+
+.author__work {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $medium-grey-color;
+  margin-bottom: 20px;
+}
+
+.author__socials {
+  margin: 0 auto;
+  width: 112px;
+  display: flex;
+  justify-content: space-between;
+
+  img:hover {
+    filter: brightness(70%);
+  }
+}

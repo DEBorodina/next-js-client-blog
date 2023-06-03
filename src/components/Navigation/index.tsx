@@ -14,7 +14,7 @@ const Navigation: React.FC<NavigationProps> = ({ type }) => {
   const navigationLinks =
     type === 'header' ? headerNavigation : footerNavigation;
 
-  const withActive = type === 'header' ? true : false;
+  const withActive = type === 'header';
 
   return (
     <nav className={styles.navigation}>

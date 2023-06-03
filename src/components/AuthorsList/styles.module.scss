@@ -1,0 +1,20 @@
+.authors {
+  width: 100%;
+  margin-bottom: 128px;
+}
+
+.authors__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.authors__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 32px;
+}

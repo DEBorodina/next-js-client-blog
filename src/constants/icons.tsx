@@ -11,10 +11,3 @@ export const icons = {
   instagram: <Image src={instagram} alt="instagram icon" />,
   linkedin: <Image src={linkedin} alt="linkedin icon" />,
 };
-
-export const socialIcons = [
-  icons.facebook,
-  icons.twitter,
-  icons.instagram,
-  icons.linkedin,
-];

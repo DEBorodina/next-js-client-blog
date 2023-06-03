@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import '../styles/global.scss';
 
 const inter = Nunito({
-  weight: ['900', '700', '400'],
+  weight: ['900', '700', '600', '500', '400'],
   subsets: ['latin', 'cyrillic'],
 });
 

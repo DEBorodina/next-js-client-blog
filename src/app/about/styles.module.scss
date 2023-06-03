@@ -1,0 +1,233 @@
+.container {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 90%;
+  max-width: 1280px;
+  position: relative;
+}
+
+.top {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 79px;
+}
+
+.top__section {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  left: 109px;
+  width: 90%;
+  max-width: 624px;
+  min-height: 356px;
+  padding: 64px;
+  background-color: $white-color;
+  color: $blue-color;
+}
+
+.top__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.top__description {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark-grey-color;
+}
+
+.top__text {
+  @extend .text;
+  margin-top: 100px;
+  width: 90%;
+  max-width: 470px;
+}
+
+.statistics {
+  background: url('/images/about-us-top-image.png');
+  width: 100%;
+  height: 444px;
+  position: relative;
+}
+
+.statistics__display {
+  position: absolute;
+  bottom: 0;
+  left: 109px;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 630px;
+  min-width: 500px;
+  height: 156px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  background-color: $yellow-color;
+}
+
+.statistics__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $blue-color;
+}
+
+.statistics__number {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.statistics__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.mission {
+  background-color: $lavender-color;
+  width: 100%;
+  margin-bottom: 128px;
+  min-height: 441px;
+  padding-top: 128px;
+  padding-bottom: 64px;
+}
+
+.mission__container {
+  width: 90%;
+  max-width: 1064px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission__card {
+  width: 45%;
+  color: $blue-color;
+}
+
+.mission__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.mission__name {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.mission__description {
+  @extend .text;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 128px;
+  min-height: 400px;
+}
+
+.info__content {
+  width: 50%;
+  max-width: 550px;
+  min-height: 316px;
+  color: $blue-color;
+}
+
+.info__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.info__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.info__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.info__image {
+  position: relative;
+  width: 40%;
+  height: 480px;
+}
+
+.join {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 414px;
+  margin-bottom: 128px;
+  text-align: center;
+}
+
+.join__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: $blue-color;
+  margin-bottom: 16px;
+}
+
+.join__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: $medium-grey-color;
+  margin-bottom: 32px;
+}
+
+.join__button {
+  width: 174px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $blue-color;
+  background-color: $yellow-color;
+  margin: 0 auto;
+  &:hover {
+    background-color: darken($color: $yellow-color, $amount: 5%);
+    cursor: pointer;
+  }
+}

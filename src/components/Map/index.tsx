@@ -18,7 +18,7 @@ const Map = () => (
   <MapContainer center={center} zoom={5}>
     <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
     {offices.map(({ geocode, popUp }) => (
-      <Marker position={geocode} icon={icon}>
+      <Marker position={geocode} icon={icon} key={popUp}>
         <Popup>
           <h2>{popUp}</h2>
         </Popup>

@@ -1,0 +1,91 @@
+[
+    {
+        "id":1,
+        "name":"Floyd Miles",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/1.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+     {
+        "id":2,
+        "name":"Dianne Russell",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/2.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+    {
+        "id":3,
+        "name":"Jenny Wilson",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/3.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+      {
+        "id":4,
+        "name":"Leslie Alexander",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/4.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+     {
+        "id":5,
+        "name":"Guy Hawkins",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/5.png",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+    {
+        "id":6,
+        "name":"Eleanor Pena",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/6.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+     {
+        "id":7,
+        "name":"Robert Fox",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/7.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    },
+    {
+        "id":8,
+        "name":"Jacob Jones",
+        "position":"Content Writer",
+        "company":"@Company",
+        "image":"/images/users/8.jpg",
+        "instagram":"https://www.instagram.com/",
+        "linkedin":"https://www.linkedin.com/",
+        "facebook":"https://www.facebook.com/",
+        "twitter":"https://twitter.com/"
+    }
+
+]
