@@ -1,0 +1,17 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: $white-color;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.active {
+  font-weight: 700;
+}

@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  background-color: $blue-color;
+}
+
+.header__container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: $white-color;
+}
+
+.header__button {
+  width: 40%;
+  max-width: 228px;
+  height: 56px;
+  margin-left: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $white-color;
+  color: $blue-color;
+
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  min-width: 450px;
+}
+
+.header__navigation {
+  width: 60%;
+  max-width: 330px;
+}
