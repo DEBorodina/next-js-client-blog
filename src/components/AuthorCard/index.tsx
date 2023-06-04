@@ -17,26 +17,28 @@ const AuthorCard: React.FC<AuthorCardProps> = ({
   facebook,
   id,
 }) => (
-  <div className={styles.author}>
-    <div className={styles.author__image}>
-      <Image
-        src={image}
-        alt={`${name} photo`}
-        fill
-        style={{ objectFit: 'cover' }}
-      />
-    </div>
-    <Link href={`/author/${id}`}>
+  <Link href={`/author/${id}`} legacyBehavior>
+    <div className={styles.author}>
+      <div className={styles.author__image}>
+        <Image
+          src={image}
+          alt={`${name} photo`}
+          fill
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+
       <span className={styles.author__name}>{name}</span>
-    </Link>
-    <span className={styles.author__work}>{`${position} ${company}`}</span>
-    <div className={styles.author__socials}>
-      <a href={facebook}>{icons.facebook}</a>
-      <a href={twitter}>{icons.twitter}</a>
-      <a href={instagram}>{icons.instagram}</a>
-      <a href={linkedin}>{icons.linkedin}</a>
+
+      <span className={styles.author__work}>{`${position} ${company}`}</span>
+      <div className={styles.author__socials}>
+        <a href={facebook}>{icons.facebook}</a>
+        <a href={twitter}>{icons.twitter}</a>
+        <a href={instagram}>{icons.instagram}</a>
+        <a href={linkedin}>{icons.linkedin}</a>
+      </div>
     </div>
-  </div>
+  </Link>
 );
 
 export default AuthorCard;

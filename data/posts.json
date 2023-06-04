@@ -1,0 +1,92 @@
+[
+    {
+        "id":1,
+        "category":"Startup",
+        "title":"Font sizes in UI design: The complete guide to follow",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/1.jpg",
+        "authorId": 1
+    },
+     {
+        "id":2,
+        "category":"Startup",
+        "title":"How to build rapport with your web design clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/2.jpg",
+        "authorId": 1
+    },
+     {
+        "id":3,
+        "category":"Business",
+        "title":"",
+        "description":"",
+        "text":"",
+        "image": "",
+        "authorId": 2
+    },
+     {
+        "id":4,
+        "category":"Business",
+        "title":"",
+        "description":"",
+        "text":"",
+        "image": "",
+        "authorId": 2
+    },
+     {
+        "id":5,
+        "category":"Business",
+        "title":"",
+        "description":"",
+        "text":"",
+        "image": "",
+        "authorId": 3
+    },
+     {
+        "id":6,
+        "category":"Business",
+        "title":"",
+        "description":"",
+        "text":"",
+        "image": "",
+        "authorId": 3
+    },
+     {
+        "id":7,
+        "category":"Startup",
+        "title":"How to build rapport with your web design clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/2.jpg",
+        "authorId": 1
+    },
+     {
+        "id":8,
+        "category":"Startup",
+        "title":"How to build rapport with your web design clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/2.jpg",
+        "authorId": 1
+    },
+     {
+        "id":9,
+        "category":"Startup",
+        "title":"How to build rapport with your web design clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/2.jpg",
+        "authorId": 1
+    },
+     {
+        "id":10,
+        "category":"Startup",
+        "title":"How to build rapport with your web design clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text":"",
+        "image": "/images/posts/2.jpg",
+        "authorId": 1
+    }
+]

@@ -8,6 +8,12 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  &:hover {
+    transition: all 0.5s;
+    background-color: $light-yellow-color;
+    cursor: pointer;
+  }
 }
 
 .author__image {
@@ -25,10 +31,6 @@
   line-height: 40px;
   letter-spacing: -1px;
   color: $blue-color;
-
-  &:hover {
-    color: lighten($blue-color, 15%);
-  }
 }
 
 .author__work {
