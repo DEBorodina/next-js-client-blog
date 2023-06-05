@@ -1,0 +1,23 @@
+.categories {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1240px;
+  margin-bottom: 64px;
+}
+
+.categories__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: $blue-color;
+  margin-bottom: 48px;
+}
+
+.categories__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 20px;
+}

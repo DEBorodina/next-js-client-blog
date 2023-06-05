@@ -1,43 +1,49 @@
 [
     {
         "id":1,
-        "category":"Startup",
+        "category":"startup",
         "title":"Font sizes in UI design: The complete guide to follow",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",
+        "date":"2023-06-04T23:15:30.000Z",
         "image": "/images/posts/1.jpg",
-        "authorId": 1
+        "authorId": 1,
+        "tags":["UI","Web"]
     },
      {
         "id":2,
-        "category":"Startup",
+        "category":"startup",
         "title":"How to build rapport with your web design clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",
+        "date":"2023-06-03T23:15:30.000Z",
         "image": "/images/posts/2.jpg",
-        "authorId": 1
+        "authorId": 1,
+        "tags":["Economy"]
     },
      {
         "id":3,
-        "category":"Business",
+        "category":"business",
         "title":"",
         "description":"",
         "text":"",
         "image": "",
-        "authorId": 2
+        "authorId": 2,
+        "tags":["Economy","Life"]
     },
      {
         "id":4,
-        "category":"Business",
+        "category":"business",
         "title":"",
         "description":"",
         "text":"",
         "image": "",
-        "authorId": 2
+        "authorId": 2,
+        "tags":["Economy","Life"]
     },
      {
         "id":5,
-        "category":"Business",
+        "category":"business",
         "title":"",
         "description":"",
         "text":"",
@@ -46,7 +52,7 @@
     },
      {
         "id":6,
-        "category":"Business",
+        "category":"business",
         "title":"",
         "description":"",
         "text":"",
@@ -55,7 +61,7 @@
     },
      {
         "id":7,
-        "category":"Startup",
+        "category":"startup",
         "title":"How to build rapport with your web design clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",
@@ -64,7 +70,7 @@
     },
      {
         "id":8,
-        "category":"Startup",
+        "category":"startup",
         "title":"How to build rapport with your web design clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",
@@ -73,7 +79,7 @@
     },
      {
         "id":9,
-        "category":"Startup",
+        "category":"startup",
         "title":"How to build rapport with your web design clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",
@@ -82,7 +88,7 @@
     },
      {
         "id":10,
-        "category":"Startup",
+        "category":"startup",
         "title":"How to build rapport with your web design clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "text":"",

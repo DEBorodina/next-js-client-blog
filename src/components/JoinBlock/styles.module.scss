@@ -1,0 +1,45 @@
+.join {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 414px;
+  margin-bottom: 128px;
+  text-align: center;
+}
+
+.join__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: $blue-color;
+  margin-bottom: 16px;
+}
+
+.join__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: $medium-grey-color;
+  margin-bottom: 32px;
+}
+
+.join__button {
+  width: 174px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $blue-color;
+  background-color: $yellow-color;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: darken($color: $yellow-color, $amount: 5%);
+    cursor: pointer;
+  }
+}
