@@ -3,6 +3,13 @@
   background-color: $blue-color;
 }
 
+.header__video {
+  width: 90vw;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
 .header__container {
   width: 90%;
   margin: 0 auto;

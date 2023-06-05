@@ -58,6 +58,7 @@
 
 .statistics {
   background: url('/images/about-us-top-image.png');
+  background-size: contain;
   width: 100%;
   height: 444px;
   position: relative;
@@ -99,49 +100,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-}
-
-.mission {
-  background-color: $lavender-color;
-  width: 100%;
-  margin-bottom: 128px;
-  min-height: 441px;
-  padding-top: 128px;
-  padding-bottom: 64px;
-}
-
-.mission__container {
-  width: 90%;
-  max-width: 1064px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.mission__card {
-  width: 45%;
-  color: $blue-color;
-}
-
-.mission__title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
-}
-
-.mission__name {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: -1px;
-  margin-bottom: 16px;
-}
-
-.mission__description {
-  @extend .text;
 }
 
 .info {

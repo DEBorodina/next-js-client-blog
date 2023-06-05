@@ -12,7 +12,6 @@
   &:hover {
     transition: all 0.5s;
     background-color: $light-yellow-color;
-    cursor: pointer;
   }
 }
 
@@ -31,6 +30,10 @@
   line-height: 40px;
   letter-spacing: -1px;
   color: $blue-color;
+
+  &:hover {
+    color: lighten($blue-color, 20%);
+  }
 }
 
 .author__work {
