@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { subscribeValidationSchema } from '@/utils/validationSchemas';
 
 import styles from './styles.module.scss';
@@ -16,6 +17,7 @@ const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
 const FooterForm = () => {
   const [hints, setHints] = useState('');
+  const { t } = useMyTranslation();
 
   const formOptions = { resolver: yupResolver(subscribeValidationSchema) };
 
@@ -50,21 +52,19 @@ const FooterForm = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit(sendForm)}>
       <div className={styles.form__container}>
-        <h6 className={styles.form__title}>
-          Subscribe to our news letter to get latest updates and news
-        </h6>
+        <h6 className={styles.form__title}>{t('subscribe.description')}</h6>
         <div className={styles.form__input_container}>
           <p className={styles.form__input_hints}>{displayHint}</p>
           <input
             {...register('email')}
             onChange={handleChange}
-            placeholder="Enter Your Email"
+            placeholder={t('enter.email')}
             className={styles.form__input}
           />
         </div>
 
         <button className={styles.form__button} type="submit">
-          Subscribe
+          {t('subscribe')}
         </button>
       </div>
     </form>

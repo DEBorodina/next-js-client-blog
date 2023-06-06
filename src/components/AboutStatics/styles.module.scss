@@ -1,0 +1,46 @@
+.statistics {
+  background: url('/images/about-us-top-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 444px;
+  position: relative;
+}
+
+.statistics__display {
+  position: absolute;
+  bottom: 0;
+  left: 109px;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 630px;
+  min-width: 500px;
+  height: 156px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  background-color: $yellow-color;
+}
+
+.statistics__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $blue-color;
+}
+
+.statistics__number {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.statistics__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}

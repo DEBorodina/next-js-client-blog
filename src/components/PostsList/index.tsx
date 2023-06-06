@@ -2,13 +2,16 @@
 
 import React, { useRef, useState } from 'react';
 
+import { serverTranslation } from '@/app/i18n/client';
+
 import PostListItem from '../PostListItem';
 import styles from './styles.module.scss';
 import { PostsListProps } from './types';
 
 const PER_PAGE = 5;
 
-const PostsList: React.FC<PostsListProps> = ({ posts, listTitle }) => {
+const PostsList: React.FC<PostsListProps> = ({ posts, listTitle, lng }) => {
+  const { t } = serverTranslation(lng);
   const [currentPage, setCurrentPage] = useState(0);
   const pageTopRef = useRef<HTMLInputElement>(null);
 
@@ -51,7 +54,7 @@ const PostsList: React.FC<PostsListProps> = ({ posts, listTitle }) => {
             />
           ))
         ) : (
-          <p className={styles.posts__info}>No posts yet</p>
+          <p className={styles.posts__info}>{t('no.posts')}</p>
         )}
       </div>
       {displayPagination && (
@@ -62,7 +65,7 @@ const PostsList: React.FC<PostsListProps> = ({ posts, listTitle }) => {
             }`}
             onClick={handlePrevious}
           >
-            {'< Prev'}
+            {t('prev')}
           </button>
           <button
             className={`${styles.pagination__button} ${
@@ -70,7 +73,7 @@ const PostsList: React.FC<PostsListProps> = ({ posts, listTitle }) => {
             }`}
             onClick={handleNext}
           >
-            {'Next >'}
+            {t('next')}
           </button>
         </div>
       )}

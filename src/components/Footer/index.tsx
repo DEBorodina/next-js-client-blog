@@ -1,12 +1,17 @@
+'use client';
+
 import React from 'react';
 
+import { useTranslation } from '@/app/i18n/client';
+import { ILanguage } from '@/app/types';
 import { socialIcons } from '@/constants/socialLinks';
 
 import FooterForm from '../FooterForm';
+import LanguageSwitcher from '../LanguageSwitcher';
 import Navigation from '../Navigation';
 import styles from './styles.module.scss';
 
-const Footer = () => (
+const Footer: React.FC<ILanguage> = ({ lng }) => (
   <footer className={styles.footer}>
     <div className={styles.footer__container}>
       <div className={styles.footer__menu}>
@@ -22,6 +27,7 @@ const Footer = () => (
           <p className={styles.footer__address}>
             Fintown Hello@finsweet.com 020 7993 2905
           </p>
+          <LanguageSwitcher lng={lng} />
         </div>
         <div className={styles.footer__icons}>
           {socialIcons.map(({ icon, href }) => (
