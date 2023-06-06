@@ -3,14 +3,15 @@ import Link from 'next/link';
 import React from 'react';
 
 import authors from '@data/authors.json';
-import posts from '@data/posts.json';
 
 import { monthNames } from '@/constants/monthNames';
 
 import styles from './styles.module.scss';
+import { BlogHeaderProps } from './types';
 
-const BlogHeader = () => {
-  const { title, description, id, date, authorId, image } = posts[0];
+const BlogHeader: React.FC<BlogHeaderProps> = ({
+  post: { title, description, id, date, authorId, image },
+}) => {
   const { name } = authors.find((author) => author.id === authorId)!;
 
   const parsedDate = new Date(date);
