@@ -9,7 +9,7 @@ const AuthorList = () => (
     <h2 className={styles.authors__title}>List of Authors</h2>
     <div className={styles.authors__list}>
       {authors.map((author) => (
-        <AuthorCard {...author} />
+        <AuthorCard {...author} key={author.id} />
       ))}
     </div>
   </div>
