@@ -1,18 +1,18 @@
 export const headerNavigation = [
   {
-    label: 'Home',
+    label: 'nav.home',
     href: '/',
   },
   {
-    label: 'Blog',
+    label: 'nav.blog',
     href: '/blog',
   },
   {
-    label: 'About us',
+    label: 'nav.about',
     href: '/about',
   },
   {
-    label: 'Contact us',
+    label: 'nav.contact',
     href: '/contact',
   },
 ];
@@ -20,7 +20,7 @@ export const headerNavigation = [
 export const footerNavigation = [
   ...headerNavigation,
   {
-    label: 'Privacy policy',
+    label: 'nav.privacy.policy',
     href: '/privacy-policy',
   },
 ];

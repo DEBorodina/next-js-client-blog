@@ -3,13 +3,16 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { footerNavigation, headerNavigation } from '@/constants/navigation';
 
 import styles from './styles.module.scss';
 import { NavigationProps } from './types';
 
-const Navigation: React.FC<NavigationProps> = ({ type }) => {
+const Navigation: React.FC<NavigationProps> = ({ type, lng }) => {
   const pathName = usePathname();
+
+  const { t } = useMyTranslation();
 
   const navigationLinks =
     type === 'header' ? headerNavigation : footerNavigation;
@@ -23,10 +26,10 @@ const Navigation: React.FC<NavigationProps> = ({ type }) => {
         return (
           <Link
             key={label}
-            href={href}
+            href={`/${lng}${href}`}
             className={isActive ? styles.active : ''}
           >
-            {label}
+            {t(label)}
           </Link>
         );
       })}

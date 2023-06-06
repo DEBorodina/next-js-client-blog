@@ -1,0 +1,9 @@
+{
+    "nav.home":"Home",
+    "nav.blog":"Blog",
+    "nav.about":"About us",
+    "nav.contact":"Contact us",
+    "nav.privacy.policy":"Privacy policy",
+    "header.video":"Video about us",
+    "languageSwitcher": "<1>{{lng}}</1> "
+}

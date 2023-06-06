@@ -1,0 +1,9 @@
+{
+    "nav.home":"Главная",
+    "nav.blog":"Блог",
+    "nav.about":"О нас",
+    "nav.contact":"Контакты",
+    "nav.privacy.policy":"Политика приватности",
+    "header.video":"Видео о нас",
+    "languageSwitcher": "<1>{{lng}}</1> "
+}

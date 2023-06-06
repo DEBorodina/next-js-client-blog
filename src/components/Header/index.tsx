@@ -2,12 +2,16 @@
 
 import React, { useState } from 'react';
 
+import { useMyTranslation } from '@/app/i18n/client';
+import { ILanguage } from '@/app/types';
+
 import { Modal } from '../Modal';
 import Navigation from '../Navigation';
 import styles from './styles.module.scss';
 
-function Header() {
+const Header: React.FC<ILanguage> = () => {
   const [openModal, setOpenModal] = useState(false);
+  const { t } = useMyTranslation();
 
   const handleClick = () => {
     setOpenModal(true);
@@ -31,12 +35,12 @@ function Header() {
             <Navigation type="header" />
           </div>
           <button className={styles.header__button} onClick={handleClick}>
-            Video about us
+            {t('header.video')}
           </button>
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
