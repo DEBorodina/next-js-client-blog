@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import AuthorList from '@/components/AuthorsList';
 import JoinBlock from '@/components/JoinBlock';
-import MissionBlock from '@/components/MissionnBlock';
 
 import styles from './styles.module.scss';
 
@@ -38,7 +37,34 @@ const AboutPage = () => (
         </div>
       </div>
     </div>
-    <MissionBlock type="about" />
+    <div className={styles.mission}>
+      <div className={styles.mission__container}>
+        <div className={styles.mission__card}>
+          <h6 className={styles.mission__title}>Our mision</h6>
+          <h3 className={styles.mission__name}>
+            Creating valuable content for creatives all around the world
+          </h3>
+          <p className={styles.mission__description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+            blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.
+            At risus viverra adipiscing at in tellus.
+          </p>
+        </div>
+        <div className={styles.mission__card}>
+          <h6 className={styles.mission__title}>Our Vision</h6>
+          <h3 className={styles.mission__name}>
+            A platform that empowers individuals to improve
+          </h3>
+          <p className={styles.mission__description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+            blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.
+            At risus viverra adipiscing at in tellus.
+          </p>
+        </div>
+      </div>
+    </div>
     <section className={styles.info}>
       <article className={styles.info__content}>
         <h2 className={styles.info__title}>Our team of creatives</h2>
