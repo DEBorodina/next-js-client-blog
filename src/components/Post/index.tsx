@@ -5,6 +5,7 @@ import React from 'react';
 import authors from '@data/authors.json';
 import categories from '@data/categories.json';
 
+import { serverTranslation } from '@/app/i18n/client';
 import { monthNames } from '@/constants/monthNames';
 
 import styles from './styles.module.scss';
@@ -12,16 +13,18 @@ import { PostProps } from './types';
 
 const Post: React.FC<PostProps> = ({
   post: { image, title, text, date, authorId, category },
+  lng,
 }) => {
+  const { t } = serverTranslation(lng);
   const author = authors.find(({ id }) => id === authorId)!;
   const { icon: categoryIcon, name: categoryName } = categories.find(
     ({ name }) => name.toLocaleLowerCase() === category
   )!;
 
   const parsedDate = new Date(date);
-  const formatDate = `${
+  const formatDate = `${t(
     monthNames[parsedDate.getMonth()]
-  } ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
+  )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
 
   return (
     <>

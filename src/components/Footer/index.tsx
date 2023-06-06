@@ -17,7 +17,7 @@ const Footer: React.FC<ILanguage> = ({ lng }) => (
       <div className={styles.footer__menu}>
         <span className={styles.footer__logo}>Modsen Client Blog</span>
         <div className={styles.footer__navigation}>
-          <Navigation type="footer" lng={lng} />
+          <Navigation type="footer" />
         </div>
       </div>
       <FooterForm />

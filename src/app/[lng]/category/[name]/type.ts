@@ -1,5 +1,7 @@
+import { ILanguage } from '@/app/types';
+
 export interface CategoryPageProps {
-  params: {
+  params: ILanguage & {
     name: string;
   };
 }

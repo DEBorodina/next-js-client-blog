@@ -2,19 +2,18 @@ import { Fragment } from 'react';
 
 import data from '@data/privacy-policy.json';
 
-import { useTranslation } from '../../i18n';
+import { serverTranslation } from '@/app/i18n/client';
+import { IPage } from '@/app/types';
+
 import styles from './styles.module.scss';
 
-const PrivacyPolicyPage = async ({ params: { lng } }) => {
-  const { t } = await useTranslation(lng);
+const PrivacyPolicyPage: React.FC<IPage> = ({ params: { lng } }) => {
+  const { t } = serverTranslation(lng);
   return (
     <div className={styles.policy}>
-      <h1>{t('title')}</h1>
       <div className={styles.policy__header}>
-        <h1 className={styles.policy__title}>Privacy Policy</h1>
-        <p className={styles.policy__update}>
-          Last Updated on 27th January 2022
-        </p>
+        <h1 className={styles.policy__title}>{t('nav.privacy.policy')}</h1>
+        <p className={styles.policy__update}>{t('last.update')}</p>
       </div>
       <div className={styles.policy__content}>
         <article className={styles.policy__article}>

@@ -5,6 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { contactValidationSchema } from '@/utils/validationSchemas';
 
 import styles from './styles.module.scss';
@@ -16,6 +17,7 @@ const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
 const ContactUsForm = () => {
   const [hints, setHints] = useState('');
+  const { t } = useMyTranslation();
 
   const formOptions = { resolver: yupResolver(contactValidationSchema) };
 
@@ -56,24 +58,24 @@ const ContactUsForm = () => {
       <p className={styles.form__hints}>{displayHint}</p>
       <input
         className={styles.form__input}
-        placeholder="Full Name"
+        placeholder={t('full.name')}
         {...register('name')}
         onChange={handleChange}
       />
       <input
         className={styles.form__input}
-        placeholder="Your Email"
+        placeholder={t('email')}
         {...register('email')}
         onChange={handleChange}
       />
       <textarea
         className={styles.form__textarea}
-        placeholder="Message"
+        placeholder={t('message')}
         {...register('message')}
         onChange={handleChange}
       />
       <button className={styles.form__button} type="submit">
-        Send Message
+        {t('send.form')}
       </button>
     </form>
   );

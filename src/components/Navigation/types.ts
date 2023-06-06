@@ -1,5 +1,3 @@
-import { ILanguage } from '@/app/types';
-
-export interface NavigationProps extends ILanguage {
+export interface NavigationProps {
   type: 'header' | 'footer';
 }

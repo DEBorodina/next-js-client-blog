@@ -1,6 +1,9 @@
-import { TFunction } from 'i18next';
+import { ITranslation } from '@/app/i18n/client';
 
 export interface ILanguage {
-  lng: string;
-  t: TFunction;
+  lng: keyof ITranslation;
+}
+
+export interface IPage {
+  params: ILanguage;
 }

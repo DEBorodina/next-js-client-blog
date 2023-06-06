@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang={lng} dir={dir(lng)}>
       <body className={inter.className}>
         <div id="portal" />
-        <Header lng={lng} />
+        <Header />
         <main>{children}</main>
         <Footer lng={lng} />
       </body>

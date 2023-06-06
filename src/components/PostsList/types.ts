@@ -1,3 +1,5 @@
+import { ILanguage } from '@/app/types';
+
 export interface Post {
   category: string;
   title: string;
@@ -6,7 +8,7 @@ export interface Post {
   id: number;
 }
 
-export interface PostsListProps {
+export interface PostsListProps extends ILanguage {
   posts: Post[];
   listTitle?: string;
 }

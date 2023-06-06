@@ -9,7 +9,7 @@ import { footerNavigation, headerNavigation } from '@/constants/navigation';
 import styles from './styles.module.scss';
 import { NavigationProps } from './types';
 
-const Navigation: React.FC<NavigationProps> = ({ type, lng }) => {
+const Navigation: React.FC<NavigationProps> = ({ type }) => {
   const pathName = usePathname();
 
   const { t } = useMyTranslation();
@@ -22,11 +22,12 @@ const Navigation: React.FC<NavigationProps> = ({ type, lng }) => {
   return (
     <nav className={styles.navigation}>
       {navigationLinks.map(({ label, href }) => {
-        const isActive = withActive && pathName === href;
+        const isActive =
+          withActive && pathName.replace(/ru(\/)?|en(\/)?/, '') === href;
         return (
           <Link
             key={label}
-            href={`/${lng}${href}`}
+            href={`${href}`}
             className={isActive ? styles.active : ''}
           >
             {t(label)}

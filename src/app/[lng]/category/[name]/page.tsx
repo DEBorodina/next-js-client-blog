@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import categories from '@data/categories.json';
 import posts from '@data/posts.json';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import CategoryHeader from '@/components/CategoryHeader';
 import CategorySearch from '@/components/CategorySearch';
 import PostsList from '@/components/PostsList';
@@ -12,7 +13,11 @@ import PostsList from '@/components/PostsList';
 import styles from './styles.module.scss';
 import { CategoryPageProps } from './type';
 
-const CategoryPage: React.FC<CategoryPageProps> = ({ params: { name } }) => {
+const CategoryPage: React.FC<CategoryPageProps> = ({
+  params: { name, lng },
+}) => {
+  const { t } = useMyTranslation();
+
   const currentCategory = categories.find(
     (category) => category.name.toLocaleLowerCase() === name
   )!;
@@ -49,12 +54,13 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ params: { name } }) => {
 
   return (
     <>
-      <CategoryHeader category={currentCategory} />
+      <CategoryHeader category={currentCategory} lng={lng} />
       <div className={styles.category__main}>
         <div className={styles.category__posts}>
-          <PostsList posts={displayedPosts} listTitle="Posts" />
+          <PostsList posts={displayedPosts} listTitle={t('posts')} lng={lng} />
         </div>
         <CategorySearch
+          lng={lng}
           category={name}
           handleClick={handleClick}
           selectedTags={selectedTags}

@@ -1,5 +1,7 @@
+import { ILanguage } from '@/app/types';
+
 export interface PostPageProps {
-  params: {
+  params: ILanguage & {
     id: number;
   };
 }

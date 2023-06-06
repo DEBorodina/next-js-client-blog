@@ -6,14 +6,18 @@ import ReadNextBlock from '@/components/ReadNextBlock';
 
 import { PostPageProps } from './types';
 
-const PostPage: React.FC<PostPageProps> = ({ params: { id } }) => {
+const PostPage: React.FC<PostPageProps> = ({ params: { id, lng } }) => {
   const currentPost = posts.find((post) => post.id === +id)!;
 
   return (
     <>
-      <Post post={currentPost} />
-      <ReadNextBlock category={currentPost.category} postId={currentPost.id} />
-      <JoinBlock />
+      <Post post={currentPost} lng={lng} />
+      <ReadNextBlock
+        category={currentPost.category}
+        postId={currentPost.id}
+        lng={lng}
+      />
+      <JoinBlock lng={lng} />
     </>
   );
 };

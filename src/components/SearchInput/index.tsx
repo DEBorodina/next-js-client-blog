@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 import tagsList from '@data/tags.json';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { usePopup } from '@/hooks';
 import { checkStringMatch } from '@/utils/checkStringsMatch';
 
@@ -13,6 +14,8 @@ import { SearchInputProps } from './types';
 const SearchInput: React.FC<SearchInputProps> = ({ addTag }) => {
   const [tags, setTags] = useState<string[]>([]);
   const [value, setValue] = useState('');
+
+  const { t } = useMyTranslation();
 
   const [popUp, isOpen, setOpen] = usePopup();
 
@@ -51,10 +54,10 @@ const SearchInput: React.FC<SearchInputProps> = ({ addTag }) => {
         className={styles.search__input}
         value={value}
         onChange={handleChange}
-        placeholder="Search for tag..."
+        placeholder={t('search.tags')}
       />
       <button className={styles.search__button} type="submit">
-        Search
+        {t('search')}
       </button>
       {isOpen && (
         <ul className={styles.list}>
@@ -69,7 +72,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ addTag }) => {
               </li>
             ))
           ) : (
-            <li className={styles.list__item}> No tags found </li>
+            <li className={styles.list__item}>{t('no.tags.found')}</li>
           )}
         </ul>
       )}

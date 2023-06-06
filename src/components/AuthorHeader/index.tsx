@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { serverTranslation } from '@/app/i18n/client';
 import { icons } from '@/constants/icons';
 
 import styles from './styles.module.scss';
@@ -13,8 +14,10 @@ const AuthorHeader: React.FC<AuthorHeaderProps> = ({
   linkedin,
   instagram,
   facebook,
+  lng,
 }) => {
-  const text = `Hey there, I’m ${name} and welcome to my Blog`;
+  const { t } = serverTranslation(lng);
+  const text = `${t('hello')} ${name}. ${t('welcome')}`;
 
   return (
     <div className={styles.header}>

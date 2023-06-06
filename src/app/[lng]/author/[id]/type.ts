@@ -1,5 +1,7 @@
+import { ILanguage } from '@/app/types';
+
 export interface AuthorPageProps {
-  params: {
+  params: ILanguage & {
     id: number;
   };
 }

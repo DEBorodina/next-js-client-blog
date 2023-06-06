@@ -9,22 +9,27 @@ import FeaturedPostsBlock from '@/components/FeaturedPostsBlock';
 import HomeHeader from '@/components/HomeHeader';
 import HomeHistoryBlock from '@/components/HomeHistoryBlock';
 import JoinBlock from '@/components/JoinBlock';
-import MissionBlock from '@/components/MissionnBlock';
+import MissionBlock from '@/components/MissionBlock';
 import TestimonialsBlock from '@/components/TestimonialsBlock';
 
-const components = [
-  <HomeHeader />,
-  <FeaturedPostsBlock />,
-  <MissionBlock type="main" />,
-  <CategoriesSection title="Choose A Category" titleAlign="center" />,
-  <HomeHistoryBlock />,
-  <AuthorList />,
-  <BrandsBlock />,
-  <TestimonialsBlock />,
-  <JoinBlock />,
-];
+import { useMyTranslation } from '../i18n/client';
+import { IPage } from '../types';
 
-function Home() {
+const Home: React.FC<IPage> = ({ params: { lng } }) => {
+  const { t } = useMyTranslation();
+
+  const components = [
+    <HomeHeader lng={lng} />,
+    <FeaturedPostsBlock lng={lng} />,
+    <MissionBlock type="main" lng={lng} />,
+    <CategoriesSection title={t('choose.category')} titleAlign="center" />,
+    <HomeHistoryBlock lng={lng} />,
+    <AuthorList lng={lng} />,
+    <BrandsBlock lng={lng} />,
+    <TestimonialsBlock lng={lng} />,
+    <JoinBlock lng={lng} />,
+  ];
+
   const [blocks, setBlocks] = useState(components.slice(0, 2));
 
   const handleScroll = () => {
@@ -32,7 +37,8 @@ function Home() {
       window.innerHeight + document.documentElement.scrollTop >=
       document.documentElement.offsetHeight - 600
     ) {
-      setBlocks([...blocks, components[blocks.length]]);
+      const nextBlock = components[blocks.length];
+      setBlocks([...blocks, nextBlock]);
     }
   };
 
@@ -44,9 +50,14 @@ function Home() {
     return () => {};
   }, [blocks]);
 
-  return blocks.map((block) => (
-    <Fragment key={block.type.name}>{block}</Fragment>
-  ));
-}
+  return (
+    <>
+      {blocks.map((block) => (
+        <Fragment key={block.type.name}>{block}</Fragment>
+      ))}
+      ;
+    </>
+  );
+};
 
 export default Home;

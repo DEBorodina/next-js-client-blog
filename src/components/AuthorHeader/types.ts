@@ -1,4 +1,6 @@
-export interface AuthorHeaderProps {
+import { ILanguage } from '@/app/types';
+
+export interface AuthorHeaderProps extends ILanguage {
   name: string;
   image: string;
   twitter: string;

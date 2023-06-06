@@ -3,13 +3,12 @@
 import React, { useState } from 'react';
 
 import { useMyTranslation } from '@/app/i18n/client';
-import { ILanguage } from '@/app/types';
 
 import { Modal } from '../Modal';
 import Navigation from '../Navigation';
 import styles from './styles.module.scss';
 
-const Header: React.FC<ILanguage> = () => {
+const Header = () => {
   const [openModal, setOpenModal] = useState(false);
   const { t } = useMyTranslation();
 

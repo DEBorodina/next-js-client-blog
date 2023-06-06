@@ -1,5 +1,3 @@
-'use client';
-
 import { usePathname } from 'next/navigation';
 
 import en from '@/app/i18n/locales/en/translation.json';
@@ -22,3 +20,7 @@ export function useMyTranslation() {
 
   return { t };
 }
+
+export const serverTranslation = (lng: keyof ITranslation) => ({
+  t: (keyString: string) => TRANSLATIONS[lng][keyString],
+});
