@@ -11,6 +11,7 @@ import styles from './styles.module.scss';
 
 const AboutPage: React.FC<IPage> = ({ params: { lng } }) => {
   const { t } = serverTranslation(lng);
+
   return (
     <div className={styles.container}>
       <AboutHeader lng={lng} />

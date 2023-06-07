@@ -32,14 +32,16 @@ const CategoryPage: React.FC<CategoryPageProps> = ({
     )
   );
 
-  const handleClick = (tag: string) => () => {
+  const handleClickTag = (tag: string) => () => {
     if (!selectedTags.includes(tag)) {
       setSelectedTags([...selectedTags, tag]);
+
       setDisplayedPosts(
         displayedPosts.filter(({ tags }) => tags?.includes(tag))
       );
     } else {
       const newTags = selectedTags.filter((selectedTag) => tag !== selectedTag);
+
       const newPosts = posts.filter(({ category, tags }) => {
         if (category !== currentCategory.name.toLocaleLowerCase()) {
           return false;
@@ -65,7 +67,7 @@ const CategoryPage: React.FC<CategoryPageProps> = ({
         <CategorySearch
           lng={lng}
           category={name}
-          handleClick={handleClick}
+          handleClick={handleClickTag}
           selectedTags={selectedTags}
         />
       </div>
