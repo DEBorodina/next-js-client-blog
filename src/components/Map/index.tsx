@@ -15,16 +15,20 @@ const icon = new Icon({
 });
 
 const Map = () => (
-  <MapContainer center={center} zoom={5}>
-    <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
-    {offices.map(({ geocode, popUp }) => (
-      <Marker position={geocode} icon={icon} key={popUp}>
-        <Popup>
-          <h2>{popUp}</h2>
-        </Popup>
-      </Marker>
-    ))}
-  </MapContainer>
+  <>
+    {/* @ts-ignore */}
+    <MapContainer center={center} zoom={5}>
+      <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      {offices.map(({ geocode, popUp }) => (
+        /* @ts-ignore */
+        <Marker position={geocode} icon={icon} key={popUp}>
+          <Popup>
+            <h2>{popUp}</h2>
+          </Popup>
+        </Marker>
+      ))}
+    </MapContainer>
+  </>
 );
 
 export default Map;

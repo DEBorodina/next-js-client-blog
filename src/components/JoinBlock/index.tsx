@@ -2,10 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 
 import { serverTranslation } from '@/app/i18n/client';
+import { ILanguage } from '@/app/types';
 
 import styles from './styles.module.scss';
 
-const JoinBlock = ({ lng }) => {
+const JoinBlock: React.FC<ILanguage> = ({ lng }) => {
   const { t } = serverTranslation(lng);
   return (
     <div className={styles.join}>

@@ -21,15 +21,13 @@ const initI18next = async (lng: 'ru' | 'en', ns: string) => {
 export async function useTranslation(
   lng: 'ru' | 'en',
   ns = 'translation',
-  options = {}
+  options = { keyPrefix: '' }
 ) {
   const i18nextInstance = await initI18next(lng, ns);
+  const keyPref = options?.keyPrefix!;
   return {
-    t: i18nextInstance.getFixedT(
-      lng,
-      Array.isArray(ns) ? ns[0] : ns,
-      options.keyPrefix
-    ),
+    // @ts-ignore
+    t: i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns, keyPref),
     i18n: i18nextInstance,
   };
 }

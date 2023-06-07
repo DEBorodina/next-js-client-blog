@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { Ref } from 'react';
 
 import { usePopup } from '@/hooks';
 
@@ -23,7 +23,9 @@ const Header = () => {
           <HeaderMenu />
         </div>
         <button className={styles.burger} onClick={handleClick} />
-        {isOpen && <SideMenu ref={ref} setIsOpen={setIsOpen} />}
+        {isOpen && (
+          <SideMenu ref={ref as Ref<HTMLDivElement>} setIsOpen={setIsOpen} />
+        )}
       </div>
     </header>
   );
