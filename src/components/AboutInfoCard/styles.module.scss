@@ -19,6 +19,10 @@
   max-width: 550px;
   min-height: 316px;
   color: $blue-color;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .info__title {
@@ -46,4 +50,8 @@
   position: relative;
   width: 40%;
   aspect-ratio: 1/1;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 }

@@ -4,8 +4,16 @@
   width: 90%;
   margin: 0 auto;
   max-width: 1240px;
+
+  @media (max-width: 930px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .category__posts {
   width: 60%;
+
+  @media (max-width: 930px) {
+    width: 100%;
+  }
 }

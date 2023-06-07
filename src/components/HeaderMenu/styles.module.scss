@@ -1,0 +1,56 @@
+.menu__video {
+  width: 90vw;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+.menu__button {
+  width: 40%;
+  max-width: 228px;
+  height: 56px;
+  margin-left: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: $white-color;
+  color: $blue-color;
+
+  &:hover {
+    opacity: 0.95;
+    cursor: pointer;
+  }
+
+  @media (max-width: 770px) {
+    margin: 0;
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  min-width: 450px;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.menu__navigation {
+  width: 60%;
+  max-width: 330px;
+
+  @media (max-width: 770px) {
+    nav {
+      flex-direction: column;
+      margin-top: 100px;
+      align-items: center;
+      min-height: 200px;
+    }
+  }
+}

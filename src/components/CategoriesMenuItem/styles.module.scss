@@ -12,6 +12,10 @@
     transition: all 0.7s;
     background-color: rgba($light-grey-color, 50%);
   }
+
+  @media (max-width: 1020px) {
+    max-width: 100%;
+  }
 }
 
 .category_current {

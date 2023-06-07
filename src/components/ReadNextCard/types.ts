@@ -1,4 +1,6 @@
-export interface ReadNextCardProps {
+import { ILanguage } from '@/app/types';
+
+export interface ReadNextCardProps extends ILanguage {
   post: {
     title: string;
     description: string;

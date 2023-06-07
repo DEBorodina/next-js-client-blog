@@ -2,7 +2,6 @@
 
 import React from 'react';
 
-import { useTranslation } from '@/app/i18n/client';
 import { ILanguage } from '@/app/types';
 import { socialIcons } from '@/constants/socialLinks';
 
@@ -12,7 +11,7 @@ import Navigation from '../Navigation';
 import styles from './styles.module.scss';
 
 const Footer: React.FC<ILanguage> = ({ lng }) => (
-  <footer className={styles.footer}>
+  <footer className={styles.footer} id="footer">
     <div className={styles.footer__container}>
       <div className={styles.footer__menu}>
         <span className={styles.footer__logo}>Modsen Client Blog</span>

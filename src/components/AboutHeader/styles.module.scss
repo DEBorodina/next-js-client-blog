@@ -4,19 +4,31 @@
   display: flex;
   justify-content: end;
   margin-bottom: 79px;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 }
 
 .top__section {
   position: absolute;
   z-index: 10;
   top: 0px;
-  left: 109px;
-  width: 90%;
+  left: 5%;
+  width: 50%;
   max-width: 624px;
   min-height: 356px;
   padding: 64px;
   background-color: $white-color;
   color: $blue-color;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    position: static;
+    max-width: none;
+    padding: 0;
+    min-height: 0;
+  }
 }
 
 .top__title {
@@ -32,6 +44,11 @@
   font-size: 48px;
   line-height: 64px;
   letter-spacing: -2px;
+
+  @media (max-width: 500px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 .text {
@@ -44,6 +61,12 @@
 .top__text {
   @extend .text;
   margin-top: 100px;
-  width: 90%;
+  width: 50%;
   max-width: 470px;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+  }
 }

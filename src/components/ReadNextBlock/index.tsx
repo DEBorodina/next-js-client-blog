@@ -20,7 +20,7 @@ const ReadNextBlock: React.FC<ReadNextProps> = ({ category, postId, lng }) => {
       {readNextPosts.length > 0 ? (
         <div className={styles.readNext__container}>
           {readNextPosts.map((post) => (
-            <ReadNextCard post={post} />
+            <ReadNextCard post={post} lng={lng} />
           ))}
         </div>
       ) : (

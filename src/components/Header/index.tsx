@@ -1,42 +1,29 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-import { useMyTranslation } from '@/app/i18n/client';
+import { usePopup } from '@/hooks';
 
-import { Modal } from '../Modal';
-import Navigation from '../Navigation';
+import HeaderMenu from '../HeaderMenu';
+import SideMenu from '../SideMenu';
 import styles from './styles.module.scss';
 
 const Header = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const { t } = useMyTranslation();
+  const [ref, isOpen, setIsOpen] = usePopup();
 
   const handleClick = () => {
-    setOpenModal(true);
+    setIsOpen(true);
   };
 
   return (
     <header className={styles.header}>
-      {openModal && (
-        <Modal setOpen={setOpenModal}>
-          <iframe
-            title="video"
-            className={styles.header__video}
-            src="https://www.youtube.com/embed/tOX9hLmBxho?autoplay=1&mute=1"
-          />
-        </Modal>
-      )}
       <div className={styles.header__container}>
         <span className={styles.header__logo}>Modsen Client Blog</span>
         <div className={styles.header__menu}>
-          <div className={styles.header__navigation}>
-            <Navigation type="header" />
-          </div>
-          <button className={styles.header__button} onClick={handleClick}>
-            {t('header.video')}
-          </button>
+          <HeaderMenu />
         </div>
+        <button className={styles.burger} onClick={handleClick} />
+        {isOpen && <SideMenu ref={ref} setIsOpen={setIsOpen} />}
       </div>
     </header>
   );

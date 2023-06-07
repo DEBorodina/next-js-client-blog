@@ -3,9 +3,7 @@
   background-color: $lavender-color;
   width: 100%;
   max-width: 1280px;
-  margin-bottom: 128px;
   min-height: 441px;
-  padding-top: 128px;
   padding-bottom: 64px;
   margin: 0 auto;
 }
@@ -27,11 +25,20 @@
       opacity: 0.8;
     }
   }
+
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
 }
 
 .mission__card {
   width: 45%;
   color: $blue-color;
+  padding-top: 128px;
+
+  @media (max-width: 620px) {
+    width: 90%;
+  }
 }
 
 .mission__title {

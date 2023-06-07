@@ -19,7 +19,9 @@ const LanguageSwitcher: ({ lng }: ILanguage) => Promise<JSX.Element> = async ({
         .map((l, index) => (
           <span key={l}>
             {index > 0 && ' or '}
-            <Link href={`/${l}`}>{l}</Link>
+            <Link href={`/${l}`} key={l}>
+              {l}
+            </Link>
           </span>
         ))}
     </>

@@ -1,5 +1,6 @@
 .authors {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   margin-bottom: 128px;
   max-width: 1240px;
   margin: 0 auto;
@@ -18,6 +19,20 @@
 .authors__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   column-gap: 32px;
   row-gap: 32px;
+
+  @media (max-width: 1260px) {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }

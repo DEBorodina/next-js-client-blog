@@ -14,6 +14,10 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+  }
 }
 
 .block__article {
@@ -23,6 +27,12 @@
   max-width: 340px;
   height: 100%;
   color: $blue-color;
+
+  @media (max-width: 880px) {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+  }
 }
 
 .block__subtitle {

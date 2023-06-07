@@ -10,6 +10,15 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 400px;
+
+  @media (max-width: 880px) {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba($medium-grey-color, $alpha: 0.4);
+    margin-top: 32px;
+    padding-left: 0;
+    padding-top: 32px;
+  }
 }
 
 .carousel__text {
@@ -50,17 +59,25 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .carousel__controls {
-  width: 140px;
+  width: 110px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    margin: 10px 0;
+  }
 }
 
 .carousel__button {
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   font-size: 22px;
   background-color: $blue-color;

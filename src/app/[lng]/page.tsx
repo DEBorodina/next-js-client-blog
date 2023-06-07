@@ -33,9 +33,10 @@ const Home: React.FC<IPage> = ({ params: { lng } }) => {
   const [blocks, setBlocks] = useState(components.slice(0, 2));
 
   const handleScroll = () => {
+    const footerHeight = document.getElementById('footer')?.clientHeight!;
     if (
       window.innerHeight + document.documentElement.scrollTop >=
-      document.documentElement.offsetHeight - 600
+      document.documentElement.offsetHeight - 200 - footerHeight
     ) {
       const nextBlock = components[blocks.length];
       setBlocks([...blocks, nextBlock]);

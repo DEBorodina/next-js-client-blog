@@ -8,6 +8,10 @@
     transition: all 0.7s;
     background-color: $yellow-color;
   }
+
+  @media (max-width: 1100px) {
+    padding: 20px;
+  }
 }
 
 .category__image {

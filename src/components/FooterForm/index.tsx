@@ -53,19 +53,20 @@ const FooterForm = () => {
     <form className={styles.form} onSubmit={handleSubmit(sendForm)}>
       <div className={styles.form__container}>
         <h6 className={styles.form__title}>{t('subscribe.description')}</h6>
-        <div className={styles.form__input_container}>
-          <p className={styles.form__input_hints}>{displayHint}</p>
-          <input
-            {...register('email')}
-            onChange={handleChange}
-            placeholder={t('enter.email')}
-            className={styles.form__input}
-          />
+        <div className={styles.form__controls}>
+          <div className={styles.form__input_container}>
+            <p className={styles.form__input_hints}>{displayHint}</p>
+            <input
+              {...register('email')}
+              onChange={handleChange}
+              placeholder={t('enter.email')}
+              className={styles.form__input}
+            />
+          </div>
+          <button className={styles.form__button} type="submit">
+            {t('subscribe')}
+          </button>
         </div>
-
-        <button className={styles.form__button} type="submit">
-          {t('subscribe')}
-        </button>
       </div>
     </form>
   );

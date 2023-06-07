@@ -4,6 +4,10 @@
   height: 54px;
   display: flex;
   margin-bottom: 20px;
+
+  @media (max-width: 1020px) {
+    width: 100%;
+  }
 }
 
 .search__input {
@@ -45,7 +49,7 @@
   top: 57px;
   border: 1px solid $grey-color;
   border-radius: 6px;
-  width: calc(290px * 0.7);
+  width: calc(100% * 0.7);
   max-height: 122px;
   background-color: $white-color;
   overflow: auto;
