@@ -1,11 +1,11 @@
 import { serverTranslation } from '@/app/i18n/client';
 import { IPage } from '@/app/types';
-import AboutHeader from '@/components/AboutHeader';
 import AboutInfoCard from '@/components/AboutInfoCard';
-import AboutStatistics from '@/components/AboutStatics';
-import AuthorList from '@/components/AuthorsList';
-import JoinBlock from '@/components/JoinBlock';
-import MissionBlock from '@/components/MissionBlock';
+import AboutHeader from '@/components/blocks/AboutHeader';
+import AboutStatistics from '@/components/blocks/AboutStatics';
+import AuthorList from '@/components/blocks/AuthorsList';
+import JoinBlock from '@/components/blocks/JoinBlock';
+import MissionBlock from '@/components/blocks/MissionBlock';
 
 import styles from './styles.module.scss';
 

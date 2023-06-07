@@ -3,8 +3,8 @@ import React from 'react';
 import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
+import ReadNextCard from '@/components/ReadNextCard';
 
-import ReadNextCard from '../ReadNextCard';
 import styles from './styles.module.scss';
 import { ReadNextProps } from './types';
 

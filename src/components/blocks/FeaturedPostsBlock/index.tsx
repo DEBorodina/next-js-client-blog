@@ -5,9 +5,9 @@ import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
 import { ILanguage } from '@/app/types';
+import FeaturedPostCard from '@/components/FeaturedPostCard';
+import HomeFeaturedPost from '@/components/HomeFeaturedPost';
 
-import FeaturedPostCard from '../FeaturedPostCard';
-import HomeFeaturedPost from '../HomeFeaturedPost';
 import styles from './styles.module.scss';
 
 const FeaturedPostsBlock: React.FC<ILanguage> = ({ lng }) => {
@@ -19,7 +19,7 @@ const FeaturedPostsBlock: React.FC<ILanguage> = ({ lng }) => {
     <div className={styles.block}>
       <div className={styles.block__section}>
         <h3 className={styles.block__title}>{t('featured.posts')}</h3>
-        <HomeFeaturedPost />
+        <HomeFeaturedPost lng={lng} />
       </div>
       <div className={styles.block__section}>
         <div className={styles.block__top}>
@@ -28,7 +28,7 @@ const FeaturedPostsBlock: React.FC<ILanguage> = ({ lng }) => {
         </div>
         <div className={styles.block__posts}>
           {featuredPosts.map((post) => (
-            <FeaturedPostCard post={post} key={post.id} />
+            <FeaturedPostCard post={post} key={post.id} lng={lng} />
           ))}
         </div>
       </div>

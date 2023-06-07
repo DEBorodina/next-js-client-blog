@@ -4,9 +4,7 @@ import React from 'react';
 
 import authors from '@data/authors.json';
 
-import { serverTranslation } from '@/app/i18n/client';
-import { monthNames } from '@/constants/monthNames';
-
+import PublishedData from '../PublishedData';
 import styles from './styles.module.scss';
 import { ReadNextCardProps } from './types';
 
@@ -14,22 +12,20 @@ const ReadNextCard: React.FC<ReadNextCardProps> = ({
   post: { title, authorId, description, image, date, id },
   lng,
 }) => {
-  const { t } = serverTranslation(lng);
   const { name } = authors.find((author) => author.id === authorId)!;
-
-  const parsedDate = new Date(date);
-  const formatDate = `${t(
-    monthNames[parsedDate.getMonth()]
-  )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
 
   return (
     <div className={styles.card}>
       <div className={styles.card__image}>
         <Image src={image} alt={title} fill style={{ objectFit: 'cover' }} />
       </div>
-      <p className={styles.card__info}>
-        By <Link href={`/author/${authorId}`}>{name}</Link> | {formatDate}
-      </p>
+      <PublishedData
+        name={name}
+        id={authorId}
+        date={date}
+        lng={lng}
+        color="purple"
+      />
       <Link href={`/post/${id}`} className={styles.card__title}>
         {title}
       </Link>

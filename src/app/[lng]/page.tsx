@@ -2,15 +2,15 @@
 
 import React, { Fragment, useEffect, useState } from 'react';
 
-import AuthorList from '@/components/AuthorsList';
-import BrandsBlock from '@/components/BrandsBlock';
-import CategoriesSection from '@/components/CategoriesSection';
-import FeaturedPostsBlock from '@/components/FeaturedPostsBlock';
-import HomeHeader from '@/components/HomeHeader';
-import HomeHistoryBlock from '@/components/HomeHistoryBlock';
-import JoinBlock from '@/components/JoinBlock';
-import MissionBlock from '@/components/MissionBlock';
-import TestimonialsBlock from '@/components/TestimonialsBlock';
+import AuthorList from '@/components/blocks/AuthorsList';
+import BrandsBlock from '@/components/blocks/BrandsBlock';
+import CategoriesSection from '@/components/blocks/CategoriesSection';
+import FeaturedPostsBlock from '@/components/blocks/FeaturedPostsBlock';
+import HomeHeader from '@/components/blocks/HomeHeader';
+import HomeHistoryBlock from '@/components/blocks/HomeHistoryBlock';
+import JoinBlock from '@/components/blocks/JoinBlock';
+import MissionBlock from '@/components/blocks/MissionBlock';
+import TestimonialsBlock from '@/components/blocks/TestimonialsBlock';
 
 import { useMyTranslation } from '../i18n/client';
 import { IPage } from '../types';

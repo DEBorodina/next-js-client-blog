@@ -2,7 +2,8 @@ import React from 'react';
 
 import categories from '@data/categories.json';
 
-import CategoryCard from '../CategoryCard';
+import CategoryCard from '@/components/CategoryCard';
+
 import styles from './styles.module.scss';
 import { CategoriesSectionProps } from './types';
 

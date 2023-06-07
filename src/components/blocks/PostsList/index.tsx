@@ -3,8 +3,8 @@
 import React, { useRef, useState } from 'react';
 
 import { serverTranslation } from '@/app/i18n/client';
+import PostListItem from '@/components/PostListItem';
 
-import PostListItem from '../PostListItem';
 import styles from './styles.module.scss';
 import { PostsListProps } from './types';
 

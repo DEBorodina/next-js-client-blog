@@ -4,10 +4,10 @@ import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
 import { IPage } from '@/app/types';
-import BlogHeader from '@/components/BlogHeader';
-import CategoriesSection from '@/components/CategoriesSection';
-import JoinBlock from '@/components/JoinBlock';
-import PostsList from '@/components/PostsList';
+import BlogHeader from '@/components/blocks/BlogHeader';
+import CategoriesSection from '@/components/blocks/CategoriesSection';
+import JoinBlock from '@/components/blocks/JoinBlock';
+import PostsList from '@/components/blocks/PostsList';
 
 import styles from './styles.module.scss';
 

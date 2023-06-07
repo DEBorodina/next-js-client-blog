@@ -1,17 +1,20 @@
 'use client';
 
+/* eslint-disable simple-import-sort/imports */
 import React, { useState } from 'react';
 
 import categories from '@data/categories.json';
 import posts from '@data/posts.json';
 
 import { useMyTranslation } from '@/app/i18n/client';
-import CategoryHeader from '@/components/CategoryHeader';
 import CategorySearch from '@/components/CategorySearch';
-import PostsList from '@/components/PostsList';
+import CategoryHeader from '@/components/blocks/CategoryHeader';
+import PostsList from '@/components/blocks/PostsList';
 
 import styles from './styles.module.scss';
 import { CategoryPageProps } from './type';
+
+/* eslint-disable simple-import-sort/imports */
 
 const CategoryPage: React.FC<CategoryPageProps> = ({
   params: { name, lng },

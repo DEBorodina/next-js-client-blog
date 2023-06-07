@@ -3,28 +3,25 @@ import React from 'react';
 
 import authors from '@data/authors.json';
 
-import { useMyTranslation } from '@/app/i18n/client';
-import { monthNames } from '@/constants/monthNames';
-
+import PublishedData from '../PublishedData';
 import styles from './styles.module.scss';
 import { FeaturedPostCardProps } from './types';
 
 const FeaturedPostCard: React.FC<FeaturedPostCardProps> = ({
   post: { date, title, authorId, id },
+  lng,
 }) => {
   const { name } = authors.find((author) => author.id === authorId)!;
 
-  const { t } = useMyTranslation();
-
-  const parsedDate = new Date(date);
-  const formatDate = `${t(
-    monthNames[parsedDate.getMonth()]
-  )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
   return (
     <div className={styles.post}>
-      <p className={styles.post__info}>
-        <Link href={`/author/${authorId}`}>{name}</Link> | {formatDate}
-      </p>
+      <PublishedData
+        name={name}
+        id={authorId}
+        date={date}
+        lng={lng}
+        color="purple"
+      />
       <Link className={styles.post__title} href={`/post/${id}`}>
         {title}
       </Link>

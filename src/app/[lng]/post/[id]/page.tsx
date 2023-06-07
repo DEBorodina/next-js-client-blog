@@ -1,8 +1,8 @@
 import posts from '@data/posts.json';
 
-import JoinBlock from '@/components/JoinBlock';
-import Post from '@/components/Post';
-import ReadNextBlock from '@/components/ReadNextBlock';
+import JoinBlock from '@/components/blocks/JoinBlock';
+import Post from '@/components/blocks/Post';
+import ReadNextBlock from '@/components/blocks/ReadNextBlock';
 
 import { PostPageProps } from './types';
 

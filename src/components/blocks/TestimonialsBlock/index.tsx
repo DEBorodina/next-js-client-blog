@@ -1,7 +1,7 @@
 import { serverTranslation } from '@/app/i18n/client';
 import { ILanguage } from '@/app/types';
+import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 
-import TestimonialsCarousel from '../TestimonialsCarousel';
 import styles from './styles.module.scss';
 
 const TestimonialsBlock: React.FC<ILanguage> = ({ lng }) => {

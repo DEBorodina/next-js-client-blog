@@ -2,8 +2,8 @@ import authors from '@data/authors.json';
 import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
-import AuthorHeader from '@/components/AuthorHeader';
-import PostsList from '@/components/PostsList';
+import AuthorHeader from '@/components/blocks/AuthorHeader';
+import PostsList from '@/components/blocks/PostsList';
 
 import { AuthorPageProps } from './type';
 

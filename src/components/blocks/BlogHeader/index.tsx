@@ -7,7 +7,7 @@ import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
 import { ILanguage } from '@/app/types';
-import { monthNames } from '@/constants/monthNames';
+import PublishedData from '@/components/PublishedData';
 
 import styles from './styles.module.scss';
 
@@ -16,20 +16,19 @@ const BlogHeader: React.FC<ILanguage> = ({ lng }) => {
   const { title, description, id, date, authorId, image } = posts[0];
   const { name } = authors.find((author) => author.id === authorId)!;
 
-  const parsedDate = new Date(date);
-  const formatDate = `${t(
-    monthNames[parsedDate.getMonth()]
-  )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
-
   return (
     <div className={styles.post}>
       <article className={styles.post__container}>
         <section className={styles.post__section}>
           <h5 className={styles.post__subtitle}>{t('featured.post')}</h5>
           <h3 className={styles.post__title}>{title}</h3>
-          <p className={styles.post__info}>
-            <Link href={`/author/${authorId}`}>{name}</Link> | {formatDate}
-          </p>
+          <PublishedData
+            name={name}
+            id={authorId}
+            date={date}
+            lng={lng}
+            color="purple"
+          />
           <p className={styles.post__description}>{description}</p>
           <Link href={`/post/${id}`} className={styles.post__button}>
             {t('read.more')}
