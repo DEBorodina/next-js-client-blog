@@ -13,6 +13,7 @@ import styles from './styles.module.scss';
 
 const BlogPage: React.FC<IPage> = ({ params: { lng } }) => {
   const { t } = serverTranslation(lng);
+
   return (
     <div className={styles.blog}>
       <BlogHeader lng={lng} />
