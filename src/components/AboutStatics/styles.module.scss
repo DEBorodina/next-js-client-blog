@@ -1,0 +1,71 @@
+.statistics {
+  background: url('/images/about-us-top-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 444px;
+  position: relative;
+}
+
+.statistics__display {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 40%;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 630px;
+  min-width: 500px;
+  min-height: 156px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  background-color: $yellow-color;
+
+  @media (max-width: 630px) {
+    left: 0;
+    top: 0;
+    min-width: 0;
+    width: fit-content;
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.statistics__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $blue-color;
+
+  @media (max-width: 630px) {
+    width: 120px;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.statistics__number {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+
+  @media (max-width: 630px) {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+.statistics__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}

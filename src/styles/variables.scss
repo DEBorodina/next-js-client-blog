@@ -1,9 +1,14 @@
 $white-color: #ffffff;
 $blue-color: #232536;
 $dark-grey-color: #4c4c4c;
-$light-grey-color: #6d6e76;
+$grey-color: #9497a1;
+$medium-grey-color: #6d6e76;
+$light-grey-color: #f4f4f4;
 $yellow-color: #ffd050;
+$light-yellow-color: #fbf6ea;
 $light-pink-color: #f4f0f8;
+$purple-color: #592ea9;
+$lavender-color: #f4f0f8;
 
 :export {
   $white-color: $white-color;
@@ -12,4 +17,9 @@ $light-pink-color: #f4f0f8;
   $light-grey-color: $light-grey-color;
   $yellow-color: $yellow-color;
   $light-pink-color: $light-pink-color;
+  $medium-grey-color: $medium-grey-color;
+  $purple-color: $purple-color;
+  $lavender-color: $lavender-color;
+  $light-yellow-color: $light-yellow-color;
+  $grey-color: $grey-color;
 }

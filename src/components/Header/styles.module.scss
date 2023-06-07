@@ -3,6 +3,19 @@
   background-color: $blue-color;
 }
 
+.header__menu {
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.header__video {
+  width: 90vw;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
 .header__container {
   width: 90%;
   margin: 0 auto;
@@ -38,11 +51,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
   min-width: 450px;
+
+  @media (max-width: 770px) {
+    display: none;
+  }
 }
 
 .header__navigation {
   width: 60%;
   max-width: 330px;
+}
+
+.burger {
+  display: none;
+  background-color: transparent;
+  background-image: url('/icons/menu.svg');
+  height: 50px;
+  width: 50px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 770px) {
+    display: block;
+  }
 }

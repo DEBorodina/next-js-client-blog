@@ -1,0 +1,107 @@
+{
+    "nav.home":"Home",
+    "nav.blog":"Blog",
+    "nav.about":"About us",
+    "nav.contact":"Contact us",
+    "nav.privacy.policy":"Privacy policy",
+
+    "header.video":"Video about us",
+    "header.posted.on":"Posted on",
+
+    "month.january":"Оanuary",
+    "month.february":"February",
+    "month.march":"March",
+    "month.april":"April",
+    "month.may":"May",
+    "month.june":"June",
+    "month.july":"July",
+    "month.august":"August",
+    "month.september":"September",
+    "month.october":"October",
+    "month.november":"November",
+    "month.december":"December",
+
+    "featured.posts":"Featured posts",
+    "featured.post":"Featured Post",
+    "all.posts":"All posts",
+    "posts":"Post",
+    "no.posts":"No posts yet",
+    "view.all":"View all",
+    "read.more":"Read more >",
+    "my.posts":"My posts",
+
+    "all.tags":"All tags",
+    "search.tags":"Search for tag...",
+    "search":"Search",
+    "no.tags.found":"No tags found",
+
+    "out.mission": "Our mission",
+    "our.mission.title": "We are a community of content writers who share their learnings", 
+    "our.mission.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
+    "our.vision": "Our vision",
+    "our.vision.title": "A platform that empowers individuals to improve",
+    "our.vision.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
+    "about.us":"About us",
+    "about.us.title":"We are a community of content writers who share their learnings", 
+    "about.us.description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+    "choose.category":"Choose A Category",
+    "all.categories":"All categories",
+    "categories":"Categories",
+
+    "why.we.started":"Why we started",
+    "why.we.started.title":"It started out as a simple idea and evolved into our passion",
+    "why.we.started.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+    "discover.our.story":"Discover our story >",
+
+    "authors.list":"List of authors",
+
+    "we.are":"We are",
+    "featured.in":"Featured in",
+
+    "testimonials":"Еestimonials",
+    "what.people.say":"What people say about our blog",
+    "testimonials.description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+
+    "join":"Join our team to be a part of our story",
+    "join.now":"Join Now",
+    "join.description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+
+    "prev":"< Prev",
+    "next":"Next >",
+
+    "blogs.published":"Blogs Published",
+    "views.on.finsweet":"Views on Finsweet",
+    "total.users":"Total active Users",
+
+    "our.team":"Our team of creatives",
+    "our.team.subtitle":"   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "our.team.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
+    "our.team.alt":"our team",
+
+    "last.update": "Last Updated on 27th January 2022",
+
+    "start.conversation":"Let’s Start a Conversation",
+    "contact.description":" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "working.hours":"Working hours",
+    "working.days.data":"Monday To Friday",
+    "working.hours.data":"9:00 AM to 8:00 PM",
+    "our.support":"Our Support Team is available 24/7",
+
+    "full.name":"Full Name",
+    "email":"Your Email",
+    "message":"Message",
+    "send.form":"Send Message",
+
+    "read.next":"What to read next",
+    "no.suggestions":"No suggestions yet",
+
+    "hello":"Hey there, I’m",
+    "welcome":"Welcome to my Blog",
+
+    "subscribe.description":"Subscribe to our news letter to get latest updates and news",
+    "enter.email":"Enter Your Email",
+    "subscribe":"Subscribe",
+
+    "languageSwitcher": "<1>{{lng}}</1> "
+}

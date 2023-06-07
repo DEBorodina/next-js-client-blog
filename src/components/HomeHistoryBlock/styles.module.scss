@@ -1,0 +1,97 @@
+.history {
+  position: relative;
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 128px;
+  margin-top: 128px;
+
+  @media (max-width: 740px) {
+    margin: 0 auto;
+  }
+}
+
+.history__image {
+  position: relative;
+  width: 60%;
+  height: 700px;
+  background: url('/images/home-team-image.png');
+  background-position: 0 100%;
+  background-size: cover;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
+}
+
+.history__article {
+  position: absolute;
+  top: 112px;
+  right: 0;
+  background-color: $white-color;
+  height: calc(100% - 112px);
+  width: 60%;
+  padding: 80px;
+  color: $blue-color;
+
+  @media (max-width: 1025px) {
+    top: 60px;
+    height: calc(100% - 60px);
+    width: 70%;
+    padding: 60px;
+  }
+
+  @media (max-width: 740px) {
+    position: static;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+.history__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #232536;
+  margin-bottom: 24px;
+}
+
+.history__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+
+  @media (max-width: 740px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.history__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $medium-grey-color;
+  margin-bottom: 32px;
+}
+
+.history__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: $yellow-color;
+  color: $blue-color;
+
+  &:hover {
+    background-color: darken($color: $yellow-color, $amount: 5%);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,34 @@
+.categories {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1240px;
+  margin-bottom: 64px;
+  margin-top: 128px;
+}
+
+.categories__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: $blue-color;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.categories__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @media (max-width: 1060px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Business",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "icon":"/icons/business.svg"
+    },
+       {
+        "name":"Startup",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "icon":"/icons/startup.svg"
+    },
+       {
+        "name":"Economy",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "icon":"/icons/economy.svg"
+    },
+       {
+        "name":"Technology",
+        "description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "icon":"/icons/technology.svg"
+    }
+]

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { useMyTranslation } from '@/app/i18n/client';
 import { footerNavigation, headerNavigation } from '@/constants/navigation';
 
 import styles from './styles.module.scss';
@@ -11,22 +12,25 @@ import { NavigationProps } from './types';
 const Navigation: React.FC<NavigationProps> = ({ type }) => {
   const pathName = usePathname();
 
+  const { t } = useMyTranslation();
+
   const navigationLinks =
     type === 'header' ? headerNavigation : footerNavigation;
 
-  const withActive = type === 'header' ? true : false;
+  const withActive = type === 'header';
 
   return (
     <nav className={styles.navigation}>
       {navigationLinks.map(({ label, href }) => {
-        const isActive = withActive && pathName === href;
+        const isActive =
+          withActive && pathName.replace(/ru(\/)?|en(\/)?/, '') === href;
         return (
           <Link
             key={label}
-            href={href}
+            href={`${href}`}
             className={isActive ? styles.active : ''}
           >
-            {label}
+            {t(label)}
           </Link>
         );
       })}

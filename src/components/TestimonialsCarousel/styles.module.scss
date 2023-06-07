@@ -1,0 +1,100 @@
+.carousel {
+  padding-left: 40px;
+  width: 60%;
+  margin: 0 auto;
+  max-width: 570px;
+  height: 100%;
+  color: $blue-color;
+  border-left: 1px solid rgba($medium-grey-color, $alpha: 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+
+  @media (max-width: 880px) {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba($medium-grey-color, $alpha: 0.4);
+    margin-top: 32px;
+    padding-left: 0;
+    padding-top: 32px;
+  }
+}
+
+.carousel__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.user__address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $medium-grey-color;
+}
+
+.image {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.carousel__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.carousel__controls {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 500px) {
+    margin: 10px 0;
+  }
+}
+
+.carousel__button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 22px;
+  background-color: $blue-color;
+  color: $white-color;
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+.carousel__button_disabled {
+  background-color: $white-color;
+  color: $blue-color;
+
+  &:hover {
+    opacity: 1;
+    cursor: auto;
+  }
+}
