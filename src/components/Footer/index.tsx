@@ -26,6 +26,7 @@ const Footer: React.FC<ILanguage> = ({ lng }) => (
           <p className={styles.footer__address}>
             Fintown Hello@finsweet.com 020 7993 2905
           </p>
+          {/* @ts-expect-error Server Component */}
           <LanguageSwitcher lng={lng} />
         </div>
         <div className={styles.footer__icons}>

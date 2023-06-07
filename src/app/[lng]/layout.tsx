@@ -2,7 +2,6 @@
 import { dir } from 'i18next';
 import { Nunito } from 'next/font/google';
 
-import { useTranslation } from '@/app/i18n';
 import { languages } from '@/app/i18n/settings';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';

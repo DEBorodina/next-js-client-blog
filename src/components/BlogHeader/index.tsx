@@ -6,11 +6,12 @@ import authors from '@data/authors.json';
 import posts from '@data/posts.json';
 
 import { serverTranslation } from '@/app/i18n/client';
+import { ILanguage } from '@/app/types';
 import { monthNames } from '@/constants/monthNames';
 
 import styles from './styles.module.scss';
 
-const BlogHeader = ({ lng }) => {
+const BlogHeader: React.FC<ILanguage> = ({ lng }) => {
   const { t } = serverTranslation(lng);
   const { title, description, id, date, authorId, image } = posts[0];
   const { name } = authors.find((author) => author.id === authorId)!;

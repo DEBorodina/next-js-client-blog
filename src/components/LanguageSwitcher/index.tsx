@@ -13,7 +13,10 @@ const LanguageSwitcher: ({ lng }: ILanguage) => Promise<JSX.Element> = async ({
   const { t } = await useTranslation(lng);
   return (
     <>
-      <Trans t={t}>{{ lng }} </Trans>
+      {
+        // @ts-ignore}
+        <Trans t={t}>{{ lng }} </Trans>
+      }
       {languages
         .filter((l) => lng !== l)
         .map((l, index) => (
