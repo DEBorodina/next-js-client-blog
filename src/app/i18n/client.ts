@@ -14,7 +14,7 @@ export function useMyTranslation() {
   const router = usePathname();
 
   let locale: keyof ITranslation = 'en';
-  if (router.includes('ru')) locale = 'ru';
+  if (router && router.includes('ru')) locale = 'ru';
 
   const t = (keyString: string) => TRANSLATIONS[locale][keyString];
 

@@ -1,0 +1,25 @@
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border: 10px solid $yellow-color;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: loading 1s linear infinite;
+  opacity: 1;
+}

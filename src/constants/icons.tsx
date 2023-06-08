@@ -1,23 +1,46 @@
 import Image from 'next/image';
 
-import facebook from '@public/icons/facebook.svg';
-import instagram from '@public/icons/instagram.svg';
-import linkedin from '@public/icons/linkedin.svg';
-import company1 from '@public/icons/logo1.svg';
-import company2 from '@public/icons/logo2.svg';
-import company3 from '@public/icons/logo3.svg';
-import company4 from '@public/icons/logo4.svg';
-import company5 from '@public/icons/logo5.svg';
-import twitter from '@public/icons/twitter.svg';
-
 export const icons = {
-  twitter: <Image src={twitter} alt="twitter icon" />,
-  facebook: <Image src={facebook} alt="facebook icon" />,
-  instagram: <Image src={instagram} alt="instagram icon" />,
-  linkedin: <Image src={linkedin} alt="linkedin icon" />,
-  company1: <Image src={company1} alt="company1 logo" />,
-  company2: <Image src={company2} alt="company2 logo" />,
-  company3: <Image src={company3} alt="company3 logo" />,
-  company4: <Image src={company4} alt="company4 logo" />,
-  company5: <Image src={company5} alt="company5 logo" />,
+  twitter: (
+    <Image src="/icons/twitter.svg" alt="twitter icon" width={20} height={20} />
+  ),
+  facebook: (
+    <Image
+      src="/icons/facebook.svg"
+      alt="facebook icon"
+      width={20}
+      height={20}
+    />
+  ),
+  instagram: (
+    <Image
+      src="/icons/instagram.svg"
+      alt="instagram icon"
+      width={20}
+      height={20}
+    />
+  ),
+  linkedin: (
+    <Image
+      src="/icons/linkedin.svg"
+      alt="linkedin icon"
+      width={20}
+      height={20}
+    />
+  ),
+  company1: (
+    <Image src="/icons/logo1.svg" alt="company1 logo" width={20} height={20} />
+  ),
+  company2: (
+    <Image src="/icons/logo2.svg" alt="company2 logo" width={20} height={20} />
+  ),
+  company3: (
+    <Image src="/icons/logo3.svg" alt="company3 logo" width={20} height={20} />
+  ),
+  company4: (
+    <Image src="/icons/logo4.svg" alt="company4 logo" width={20} height={20} />
+  ),
+  company5: (
+    <Image src="/icons/logo5.svg" alt="company5 logo" width={20} height={20} />
+  ),
 };

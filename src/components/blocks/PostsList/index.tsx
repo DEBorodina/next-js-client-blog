@@ -21,9 +21,6 @@ const PostsList: React.FC<PostsListProps> = ({ posts, listTitle, lng }) => {
     (currentPage + 1) * PER_PAGE
   );
 
-  const hasPrevious = currentPage !== 0;
-  const hasNext = currentPage !== Math.ceil(posts.length / PER_PAGE) - 1;
-
   const handlePrevious = () => {
     if (currentPage !== 0) {
       setCurrentPage(currentPage - 1);
@@ -37,6 +34,9 @@ const PostsList: React.FC<PostsListProps> = ({ posts, listTitle, lng }) => {
       pageTopRef?.current?.scrollIntoView();
     }
   };
+
+  const hasPrevious = currentPage !== 0;
+  const hasNext = currentPage !== Math.ceil(posts.length / PER_PAGE) - 1;
 
   return (
     <div className={styles.posts} ref={pageTopRef}>
