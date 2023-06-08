@@ -12,6 +12,7 @@ const CategoriesMenuItem: React.FC<CategoriesMenuItemProps> = ({
   <Link href={`/category/${name.toLocaleLowerCase()}`} legacyBehavior>
     <div
       className={`${styles.category} ${isCurrent && styles.category_current}`}
+      aria-label="category-list-item"
     >
       <div className={styles.category__image}>
         <Image src={icon} alt={name} fill style={{ objectFit: 'cover' }} />

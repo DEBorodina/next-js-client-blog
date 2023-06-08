@@ -18,7 +18,7 @@ export function useMyTranslation() {
 
   const t = (keyString: string) => TRANSLATIONS[locale][keyString];
 
-  return { t };
+  return { t, locale };
 }
 
 export const serverTranslation = (lng: keyof ITranslation) => ({
