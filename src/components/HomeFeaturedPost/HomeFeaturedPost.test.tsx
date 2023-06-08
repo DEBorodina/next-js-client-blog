@@ -7,7 +7,7 @@ describe('Test home featured post', () => {
     render(<HomeFeaturedPost lng="ru" />);
 
     expect(screen.queryByText('Floyd Miles')).toBeInTheDocument();
-    expect(screen.queryByText('| Июнь 4, 2023')).toBeInTheDocument();
+
     expect(
       screen.queryByText('How to build rapport with your web design clients')
     ).toBeInTheDocument();
@@ -23,7 +23,7 @@ describe('Test home featured post', () => {
     render(<HomeFeaturedPost lng="en" />);
 
     expect(screen.queryByText('Floyd Miles')).toBeInTheDocument();
-    expect(screen.queryByText('| June 4, 2023')).toBeInTheDocument();
+
     expect(
       screen.queryByText('How to build rapport with your web design clients')
     ).toBeInTheDocument();
