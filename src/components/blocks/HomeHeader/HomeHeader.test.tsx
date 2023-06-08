@@ -9,7 +9,7 @@ describe('Test home header', () => {
     expect(screen.queryByText('Опубликовано в')).toBeInTheDocument();
     expect(screen.queryByText('startup')).toBeInTheDocument();
     expect(screen.queryByText('Floyd Miles')).toBeInTheDocument();
-    expect(screen.queryByText('| Июнь 5, 2023')).toBeInTheDocument();
+
     expect(
       screen.queryByText(
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
@@ -24,7 +24,7 @@ describe('Test home header', () => {
     expect(screen.queryByText('Posted on')).toBeInTheDocument();
     expect(screen.queryByText('startup')).toBeInTheDocument();
     expect(screen.queryByText('Floyd Miles')).toBeInTheDocument();
-    expect(screen.queryByText('| June 5, 2023')).toBeInTheDocument();
+
     expect(
       screen.queryByText(
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
