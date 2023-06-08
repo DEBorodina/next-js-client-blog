@@ -17,6 +17,7 @@ const PublishedData: React.FC<PublishedDataProps> = ({
   const { t } = serverTranslation(lng);
 
   const parsedDate = new Date(date);
+
   const formatDate = `${t(
     monthNames[parsedDate.getMonth()]
   )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;

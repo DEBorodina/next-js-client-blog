@@ -23,7 +23,7 @@ const Navigation: React.FC<NavigationProps> = ({ type }) => {
     <nav className={styles.navigation}>
       {navigationLinks.map(({ label, href }) => {
         const isActive =
-          withActive && pathName.replace(/ru(\/)?|en(\/)?/, '') === href;
+          withActive && pathName.replace(/ru(\/)?|en(\/)?/, '') === href; // compare '/ru' and '/en'
         return (
           <Link
             key={label}

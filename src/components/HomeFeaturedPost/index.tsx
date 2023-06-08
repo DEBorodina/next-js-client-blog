@@ -13,9 +13,10 @@ import styles from './styles.module.scss';
 
 const HomeFeaturedPost: React.FC<ILanguage> = ({ lng }) => {
   const { title, description, id, date, authorId, image } = posts[1];
-  const { t } = serverTranslation(lng);
 
   const { name } = authors.find((author) => author.id === authorId)!;
+
+  const { t } = serverTranslation(lng);
 
   return (
     <div className={styles.post}>

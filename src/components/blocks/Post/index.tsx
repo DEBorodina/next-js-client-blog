@@ -16,6 +16,7 @@ const Post: React.FC<PostProps> = ({
   lng,
 }) => {
   const { t } = serverTranslation(lng);
+
   const author = authors.find(({ id }) => id === authorId)!;
   const { icon: categoryIcon, name: categoryName } = categories.find(
     ({ name }) => name.toLocaleLowerCase() === category

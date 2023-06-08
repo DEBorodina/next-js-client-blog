@@ -29,7 +29,6 @@ const AuthorCard: React.FC<AuthorCardProps> = ({
     <Link href={`/author/${id}`} className={styles.author__name}>
       {name}
     </Link>
-
     <span className={styles.author__work}>{`${position} ${company}`}</span>
     <div className={styles.author__socials}>
       <a href={facebook}>{icons.facebook}</a>

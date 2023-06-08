@@ -6,20 +6,19 @@ import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { useMyTranslation } from '@/app/i18n/client';
+import { credentials } from '@/constants/email';
 import { subscribeValidationSchema } from '@/utils/validationSchemas';
 
 import styles from './styles.module.scss';
 import { SubscribeCredentials } from './types';
-
-const SERVER_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVER_ID!;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_SUBSCRIBE_TEMPLATE_ID!;
-const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
 
 const FooterForm = () => {
   const [hints, setHints] = useState('');
   const { t } = useMyTranslation();
 
   const formOptions = { resolver: yupResolver(subscribeValidationSchema) };
+
+  const { serverId, publicKey, subscribeTemplate } = credentials;
 
   const { register, handleSubmit, clearErrors, formState, reset } =
     useForm<SubscribeCredentials>(formOptions);
@@ -34,7 +33,7 @@ const FooterForm = () => {
     event?.preventDefault();
     setHints('Subscribing...');
     try {
-      await emailjs.send(SERVER_ID, TEMPLATE_ID, data, PUBLIC_KEY);
+      await emailjs.send(serverId, subscribeTemplate, data, publicKey);
 
       setHints('Subscribed!');
       reset();
