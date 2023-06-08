@@ -12,7 +12,7 @@ import { NavigationProps } from './types';
 const Navigation: React.FC<NavigationProps> = ({ type }) => {
   const pathName = usePathname();
 
-  const { t } = useMyTranslation();
+  const { t, locale } = useMyTranslation();
 
   const navigationLinks =
     type === 'header' ? headerNavigation : footerNavigation;
@@ -27,7 +27,7 @@ const Navigation: React.FC<NavigationProps> = ({ type }) => {
         return (
           <Link
             key={label}
-            href={`${href}`}
+            href={`/${locale}${href}`}
             className={isActive ? styles.active : ''}
           >
             {t(label)}

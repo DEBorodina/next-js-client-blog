@@ -28,6 +28,7 @@ const HeaderMenu: React.FC<Partial<SideMenuProps>> = ({ setIsOpen }) => {
       {openModal && (
         <Modal setOpen={setOpenModal}>
           <iframe
+            aria-label="video"
             title="video"
             className={styles.menu__video}
             src="https://www.youtube.com/embed/tOX9hLmBxho?autoplay=1&mute=1"

@@ -35,7 +35,7 @@
     "search":"Search",
     "no.tags.found":"No tags found",
 
-    "out.mission": "Our mission",
+    "our.mission": "Our mission",
     "our.mission.title": "We are a community of content writers who share their learnings", 
     "our.mission.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 
     "our.vision": "Our vision",
@@ -59,7 +59,7 @@
     "we.are":"We are",
     "featured.in":"Featured in",
 
-    "testimonials":"Еestimonials",
+    "testimonials":"Testimonials",
     "what.people.say":"What people say about our blog",
     "testimonials.description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
 
@@ -74,8 +74,12 @@
     "views.on.finsweet":"Views on Finsweet",
     "total.users":"Total active Users",
 
+    "why.we.started.blog":"Why we started this blog",
+    "why.we.started.blog.subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "why.we.started.blog.description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+
     "our.team":"Our team of creatives",
-    "our.team.subtitle":"   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "our.team.subtitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     "our.team.description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.",
     "our.team.alt":"our team",
 

@@ -2,7 +2,7 @@ import { serverTranslation } from '@/app/i18n/client';
 import { IPage } from '@/app/types';
 import AboutInfoCard from '@/components/AboutInfoCard';
 import AboutHeader from '@/components/blocks/AboutHeader';
-import AboutStatistics from '@/components/blocks/AboutStatics';
+import AboutStatistics from '@/components/blocks/AboutStatistic';
 import AuthorList from '@/components/blocks/AuthorsList';
 import JoinBlock from '@/components/blocks/JoinBlock';
 import MissionBlock from '@/components/blocks/MissionBlock';
