@@ -29,18 +29,18 @@ export const icons = {
     />
   ),
   company1: (
-    <Image src="/icons/logo1.svg" alt="company1 logo" width={20} height={20} />
+    <Image src="/icons/logo1.svg" alt="company1 logo" width={160} height={32} />
   ),
   company2: (
-    <Image src="/icons/logo2.svg" alt="company2 logo" width={20} height={20} />
+    <Image src="/icons/logo2.svg" alt="company2 logo" width={160} height={32} />
   ),
   company3: (
-    <Image src="/icons/logo3.svg" alt="company3 logo" width={20} height={20} />
+    <Image src="/icons/logo3.svg" alt="company3 logo" width={160} height={32} />
   ),
   company4: (
-    <Image src="/icons/logo4.svg" alt="company4 logo" width={20} height={20} />
+    <Image src="/icons/logo4.svg" alt="company4 logo" width={160} height={32} />
   ),
   company5: (
-    <Image src="/icons/logo5.svg" alt="company5 logo" width={20} height={20} />
+    <Image src="/icons/logo5.svg" alt="company5 logo" width={160} height={32} />
   ),
 };

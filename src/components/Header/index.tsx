@@ -22,7 +22,11 @@ const Header = () => {
         <div className={styles.header__menu}>
           <HeaderMenu />
         </div>
-        <button className={styles.burger} onClick={handleClick} />
+        <button
+          className={styles.burger}
+          onClick={handleClick}
+          aria-label="burger"
+        />
         {isOpen && (
           <SideMenu ref={ref as Ref<HTMLDivElement>} setIsOpen={setIsOpen} />
         )}
