@@ -32,7 +32,11 @@ const HomeFeaturedPost: React.FC<ILanguage> = ({ lng }) => {
       />
       <h3 className={styles.post__title}>{title}</h3>
       <p className={styles.post__description}>{description}</p>
-      <Link href={`/post/${id}`} className={styles.post__button}>
+      <Link
+        href={`/post/${id}`}
+        className={styles.post__button}
+        data-cy="featured-post-link"
+      >
         {t('read.more')}
       </Link>
     </div>

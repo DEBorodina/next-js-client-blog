@@ -26,7 +26,9 @@ const MissionBlock: React.FC<MissionBlockProps> = ({ type, lng }) => {
               <p className={styles.mission__description}>
                 {t('about.us.description')}
               </p>
-              <Link href="/about">{t('read.more')}</Link>
+              <Link href="/about" data-cy="read-more-about">
+                {t('read.more')}
+              </Link>
             </>
           )}
         </div>
