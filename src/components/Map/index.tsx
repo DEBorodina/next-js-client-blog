@@ -1,8 +1,6 @@
 'use client';
 
-// eslint-disable-next-line simple-import-sort/imports
 import { Icon, LatLngExpression } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 import { center, offices } from '@/constants/mapdata';

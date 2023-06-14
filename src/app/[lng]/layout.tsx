@@ -1,5 +1,5 @@
-/* eslint-disable simple-import-sort/imports */
 import { dir } from 'i18next';
+import 'leaflet/dist/leaflet.css';
 import { Nunito } from 'next/font/google';
 
 import { languages } from '@/app/i18n/settings';
