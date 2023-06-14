@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import authors from '@data/authors.json';
+import { usePostWithAuthor } from '@/hooks/usePostWithAuthor';
 
 import PublishedData from '../PublishedData';
 import styles from './styles.module.scss';
@@ -11,7 +11,7 @@ const FeaturedPostCard: React.FC<FeaturedPostCardProps> = ({
   post: { date, title, authorId, id },
   lng,
 }) => {
-  const { name } = authors.find((author) => author.id === authorId)!;
+  const { name } = usePostWithAuthor(id);
 
   return (
     <div className={styles.post}>

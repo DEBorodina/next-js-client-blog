@@ -2,19 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import authors from '@data/authors.json';
-import posts from '@data/posts.json';
-
 import { serverTranslation } from '@/app/i18n/client';
 import { ILanguage } from '@/app/types';
 import PublishedData from '@/components/PublishedData';
+import { usePostWithAuthor } from '@/hooks/usePostWithAuthor';
 
 import styles from './styles.module.scss';
 
 const BlogHeader: React.FC<ILanguage> = ({ lng }) => {
   const { t } = serverTranslation(lng);
-  const { title, description, id, date, authorId, image } = posts[0];
-  const { name } = authors.find((author) => author.id === authorId)!;
+
+  const { title, name, date, id, description, image, authorId } =
+    usePostWithAuthor(0);
 
   return (
     <div className={styles.post}>

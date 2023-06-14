@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { serverTranslation } from '@/app/i18n/client';
-import { monthNames } from '@/constants/monthNames';
+import { formatDate } from '@/utils/dateFormatter';
 
 import styles from './styles.module.scss';
 import { PublishedDataProps } from './types';
@@ -14,17 +13,11 @@ const PublishedData: React.FC<PublishedDataProps> = ({
   date,
   color = 'yellow',
 }) => {
-  const { t } = serverTranslation(lng);
-
-  const parsedDate = new Date(date);
-
-  const formatDate = `${t(
-    monthNames[parsedDate.getMonth()]
-  )} ${parsedDate.getDate()}, ${parsedDate.getFullYear()}`;
+  const formattedDate = formatDate(lng, date);
 
   return (
     <p className={`${styles.info} ${color === 'purple' && styles.info_purple}`}>
-      <Link href={`/author/${id}`}>{name}</Link> | {formatDate}
+      <Link href={`/author/${id}`}>{name}</Link> | {formattedDate}
     </p>
   );
 };
