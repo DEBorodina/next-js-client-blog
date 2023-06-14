@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import authors from '@data/authors.json';
+import { usePostWithAuthor } from '@/hooks/usePostWithAuthor';
 
 import PublishedData from '../PublishedData';
 import styles from './styles.module.scss';
@@ -12,7 +12,7 @@ const ReadNextCard: React.FC<ReadNextCardProps> = ({
   post: { title, authorId, description, image, date, id },
   lng,
 }) => {
-  const { name } = authors.find((author) => author.id === authorId)!;
+  const { name } = usePostWithAuthor(1);
 
   return (
     <div className={styles.card}>

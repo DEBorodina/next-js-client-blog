@@ -11,22 +11,19 @@ const AboutInfoCard: React.FC<AboutInfoCardProps> = ({
   image,
   alt,
 }) => (
-  <section className={styles.info}>
-    {type === 'left' && (
-      <div className={styles.info__image}>
-        <Image src={image} alt={alt} fill style={{ objectFit: 'cover' }} />
-      </div>
-    )}
+  <section
+    className={styles.info}
+    style={{ flexDirection: type === 'right' ? 'row-reverse' : 'row' }}
+  >
+    <div className={styles.info__image}>
+      <Image src={image} alt={alt} fill style={{ objectFit: 'cover' }} />
+    </div>
+
     <article className={styles.info__content}>
       <h2 className={styles.info__title}>{title}</h2>
       <h5 className={styles.info__subtitle}>{subtitle}</h5>
       <p className={styles.info__text}>{description}</p>
     </article>
-    {type === 'right' && (
-      <div className={styles.info__image}>
-        <Image src={image} alt={alt} fill style={{ objectFit: 'cover' }} />
-      </div>
-    )}
   </section>
 );
 
